@@ -1,0 +1,46 @@
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// );
+
+$primary: #e7816b;
+$secondary: #ffad9b;
+$dark: #1d1c1e;
+$light: #ffffff;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$color-mode-type: data;
+
+// Default Color Mode Colors
+@include color-mode(dark) {
+	color: #f1f3f5;
+	background-color: $dark;
+}
+@include color-mode(light) {
+	color: var(--bs-light-text-emphasis);
+	background-color: #fff;
+}
+
+.bg-dark-grey {
+	background-color: #333136;
+}
+
+.bg-light-grey {
+	background-color: #f1f3f5;
+}
