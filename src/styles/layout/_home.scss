@@ -1,13 +1,11 @@
 .homeBanner {
 	height: 750px;
+	padding-top: 80px;
 	background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg"),
 		url("../../../assets/home/desktop/image-hero-phone.png");
 	background-size: 600px, 460px;
 	background-repeat: no-repeat, no-repeat;
-	background-position: right, center;
-	background-position-y: bottom, center;
-	background-position-y: bottom 70px, bottom -372%;
-	padding-top: 80px;
+	background-position-y: bottom 70px, bottom -300px;
 	background-position-x: right -200px, center;
 }
 
@@ -18,13 +16,31 @@
 		background-position-x: right -250px;
 		background-size: 900px;
 		background-position-y: top 27%;
+		padding-left: 95px;
 	}
 }
 
-// .phoneImg {
-// 	background-image: url("../../../assets/home/desktop/image-hero-phone.png");
-// 	background-repeat: no-repeat;
-// 	background-size: cover;
-// 	background-position: center, bottom 50%;
-// 	height: 300px;
-// }
+@media (min-width: 576px) {
+	.homeBanner {
+		border-radius: 1rem;
+	}
+}
+
+.home {
+	> * {
+		position: relative;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		width: 1006px;
+		height: 594px;
+		left: 0px;
+		top: 475px;
+		background: #f1f3f5;
+		mix-blend-mode: normal;
+		opacity: 0.5;
+		border-radius: 297px 297px 297px 0px;
+		z-index: 0;
+	}
+}
