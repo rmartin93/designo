@@ -1,4 +1,5 @@
-import phoneImg from "../../assets/home/desktop/image-hero-phone.png";
+import { BsChevronRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 export default function Home() {
 	return (
 		<div className="home">
@@ -15,7 +16,56 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-
+			<section className="container px-sm-0 section-spacer">
+				<div className="row px-sm-0">
+					<div className="col-md-6">
+						<Link
+							to="/projects"
+							className="card rounded-4 text-light gallery-card bg-1"
+						>
+							<div className="overlay h-100 d-flex flex-column justify-content-center align-items-center gap-4">
+								<h2>WEB DESIGN</h2>
+								<h3>
+									VIEW PROJECTS
+									<BsChevronRight className="text-primary ms-3" />
+								</h3>
+							</div>
+						</Link>
+					</div>
+					<div className="col-md-6">
+						<div className="row flex-column">
+							<div className="col-12">
+								<Link
+									to="/projects"
+									className="card rounded-4 text-light gallery-card bg-2 gallery-card-split gallery-card-spacer"
+								>
+									<div className="overlay h-100 d-flex flex-column justify-content-center align-items-center gap-4">
+										<h2>APP DESIGN</h2>
+										<h3>
+											VIEW PROJECTS
+											<BsChevronRight className="text-primary ms-3" />
+										</h3>
+									</div>
+								</Link>
+								<div className="col-12">
+									<Link
+										to="/projects"
+										className="card rounded-4 text-light gallery-card bg-3 gallery-card-split"
+									>
+										<div className="overlay h-100 d-flex flex-column justify-content-center align-items-center gap-4">
+											<h2>GRAPHIC DESIGN</h2>
+											<h3>
+												VIEW PROJECTS
+												<BsChevronRight className="text-primary ms-3" />
+											</h3>
+										</div>
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section className="py-4">
 				<div className="container">
 					<div className="row">

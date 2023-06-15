@@ -14,9 +14,12 @@ html * {
 }
 
 $primary: #e7816b;
+$primaryTrans: #e7826bba;
 $secondary: #ffad9b;
 $dark: #1d1c1e;
 $light: #ffffff;
+$paper: #f1f3f5;
+$grey: #333136;
 
 $grid-breakpoints: (
 	xs: 0,
@@ -33,27 +36,27 @@ $color-mode-type: data;
 
 // Default Color Mode Colors
 @include color-mode(dark) {
-	color: #f1f3f5;
+	color: $paper;
 	background-color: $dark;
 	.card h2 {
-		color: #f1f3f5;
+		color: $paper;
 	}
 }
 @include color-mode(light) {
 	color: var(--bs-light-text-emphasis);
-	background-color: #fff;
+	background-color: $light;
 	.navModalBody {
 		background-color: $dark;
 		a {
-			color: #f1f3f5;
+			color: $paper;
 		}
 	}
 }
 
 .bg-dark-grey {
-	background-color: #333136;
+	background-color: $grey;
 }
 
 .bg-light-grey {
-	background-color: #f1f3f5;
+	background-color: $paper;
 }
