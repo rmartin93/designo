@@ -1,71 +1,48 @@
 import { useTheme } from "../hooks/useTheme";
 import { BsSun } from "react-icons/bs";
 import { BsMoon } from "react-icons/bs";
-
+import { Link } from "react-router-dom";
+import logoDark from "../assets/shared/desktop/logo-dark.png";
+import logoLight from "../assets/shared/desktop/logo-light.png";
 export default function NavBar() {
 	const { theme, toggleTheme } = useTheme();
 	return (
-		<nav className="navbar navbar-expand-lg" data-bs-theme={theme}>
+		<nav className="navbar navbar-expand-md py-4" data-bs-theme={theme}>
 			<div className="container">
-				<a className="navbar-brand" href="#">
-					Navbar
-				</a>
+				<Link className="navbar-brand" to="/">
+					<img
+						src={theme === "light" ? logoDark : logoLight}
+						alt="Designo"
+						className="logo"
+					/>
+				</Link>
 				<button
-					className="navbar-toggler"
+					className="navbar-toggler border-0"
 					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
+					data-bs-toggle="modal"
+					data-bs-target="#navModal"
+					aria-controls="navModal"
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+					<ul className="navbar-nav ms-auto me-3 mb-2 mb-lg-0 gap-2">
 						<li className="nav-item">
-							<a className="nav-link active" aria-current="page" href="#">
-								Home
-							</a>
+							<Link className="nav-link" aria-current="page" to="/company">
+								OUR COMPANY
+							</Link>
 						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">
-								Link
-							</a>
+						<li>
+							<Link className="nav-link" aria-current="page" to="/locations">
+								LOCATIONS
+							</Link>
 						</li>
-						<li className="nav-item dropdown">
-							<a
-								className="nav-link dropdown-toggle"
-								href="#"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Dropdown
-							</a>
-							<ul className="dropdown-menu">
-								<li>
-									<a className="dropdown-item" href="#">
-										Action
-									</a>
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Another action
-									</a>
-								</li>
-								<li>
-									<hr className="dropdown-divider" />
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Something else here
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link disabled">Disabled</a>
+						<li>
+							<Link className="nav-link" aria-current="page" to="/contact">
+								CONTACT
+							</Link>
 						</li>
 					</ul>
 					<button
@@ -76,6 +53,52 @@ export default function NavBar() {
 					>
 						{theme === "dark" ? <BsSun /> : <BsMoon />}
 					</button>
+				</div>
+			</div>
+			{/* Modal */}
+			<div
+				class="modal fade"
+				id="navModal"
+				tabIndex="-1"
+				aria-labelledby="navModalLabel"
+				aria-hidden="true"
+			>
+				<div
+					class="modal-dialog modal-fullscreen navModal"
+					data-bs-theme={theme}
+				>
+					<div class="modal-content">
+						<div class="modal-header border-0" style={{ paddingBlock: "34px" }}>
+							<img
+								src={theme === "light" ? logoDark : logoLight}
+								alt="Designo"
+								className="logo"
+							/>
+							<button
+								type="button"
+								class="btn-close me-2"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body navModalBody">
+							<div className="d-flex flex-column gap-5 mt-4 ms-3">
+								<Link className="mobile-link" aria-current="page" to="/company">
+									OUR COMPANY
+								</Link>
+								<Link
+									className="mobile-link"
+									aria-current="page"
+									to="/locations"
+								>
+									LOCATIONS
+								</Link>
+								<Link className="mobile-link" aria-current="page" to="/contact">
+									CONTACT
+								</Link>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</nav>

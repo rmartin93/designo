@@ -9,6 +9,10 @@
 //   "dark":       $dark
 // );
 
+html * {
+	transition: 250ms ease-in-out;
+}
+
 $primary: #e7816b;
 $secondary: #ffad9b;
 $dark: #1d1c1e;
@@ -31,10 +35,19 @@ $color-mode-type: data;
 @include color-mode(dark) {
 	color: #f1f3f5;
 	background-color: $dark;
+	.card h2 {
+		color: #f1f3f5;
+	}
 }
 @include color-mode(light) {
 	color: var(--bs-light-text-emphasis);
 	background-color: #fff;
+	.navModalBody {
+		background-color: $dark;
+		a {
+			color: #f1f3f5;
+		}
+	}
 }
 
 .bg-dark-grey {
