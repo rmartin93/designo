@@ -1,4 +1,4 @@
-import logoLight from "../../assets/shared/desktop/logo-light.png";
+import logoLight from "../../public/assets/shared/desktop/logo-light.png";
 import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
