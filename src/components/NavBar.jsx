@@ -2,8 +2,8 @@ import { useTheme } from "../hooks/useTheme";
 import { BsSun } from "react-icons/bs";
 import { BsMoon } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import logoDark from "../assets/shared/desktop/logo-dark.png";
-import logoLight from "../assets/shared/desktop/logo-light.png";
+import logoDark from "../../assets/shared/desktop/logo-dark.png";
+import logoLight from "../../assets/shared/desktop/logo-light.png";
 export default function NavBar() {
 	const { theme, toggleTheme } = useTheme();
 	return (
@@ -57,18 +57,21 @@ export default function NavBar() {
 			</div>
 			{/* Modal */}
 			<div
-				class="modal fade"
+				className="modal fade"
 				id="navModal"
 				tabIndex="-1"
 				aria-labelledby="navModalLabel"
 				aria-hidden="true"
 			>
 				<div
-					class="modal-dialog modal-fullscreen navModal"
+					className="modal-dialog modal-fullscreen navModal"
 					data-bs-theme={theme}
 				>
-					<div class="modal-content">
-						<div class="modal-header border-0" style={{ paddingBlock: "34px" }}>
+					<div className="modal-content">
+						<div
+							className="modal-header border-0"
+							style={{ paddingBlock: "34px" }}
+						>
 							<img
 								src={theme === "light" ? logoDark : logoLight}
 								alt="Designo"
@@ -76,12 +79,12 @@ export default function NavBar() {
 							/>
 							<button
 								type="button"
-								class="btn-close me-2"
+								className="btn-close me-2"
 								data-bs-dismiss="modal"
 								aria-label="Close"
 							></button>
 						</div>
-						<div class="modal-body navModalBody">
+						<div className="modal-body navModalBody">
 							<div className="d-flex flex-column gap-5 mt-4 ms-3">
 								<Link className="mobile-link" aria-current="page" to="/company">
 									OUR COMPANY

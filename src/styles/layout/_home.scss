@@ -1,0 +1,30 @@
+.homeBanner {
+	height: 750px;
+	background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg"),
+		url("../../../assets/home/desktop/image-hero-phone.png");
+	background-size: 600px, 460px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: right, center;
+	background-position-y: bottom, center;
+	background-position-y: bottom 70px, bottom -372%;
+	padding-top: 80px;
+	background-position-x: right -200px, center;
+}
+
+// Change background position on bigger screens
+@media (min-width: 768px) {
+	.homeBanner {
+		max-height: 600px;
+		background-position-x: right -250px;
+		background-size: 900px;
+		background-position-y: top 27%;
+	}
+}
+
+// .phoneImg {
+// 	background-image: url("../../../assets/home/desktop/image-hero-phone.png");
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	background-position: center, bottom 50%;
+// 	height: 300px;
+// }
