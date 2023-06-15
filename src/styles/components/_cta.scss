@@ -1,0 +1,25 @@
+.cta {
+	margin-bottom: -3rem;
+	z-index: 2;
+	position: relative;
+	padding: 4rem;
+	background-image: url("../../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+	background-position-y: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	&-btn-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1.5rem;
+	}
+}
+@media (min-width: 992px) {
+	.cta {
+		background-size: cover;
+		&-btn-wrapper {
+			justify-content: end;
+			margin-top: 1.5rem;
+		}
+	}
+}

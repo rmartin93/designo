@@ -47,6 +47,11 @@
 			font-size: 40px;
 		}
 	}
+	.features {
+		.card-body {
+			display: block;
+		}
+	}
 }
 @media (min-width: 768px) {
 	.gallery-card-split {
@@ -57,5 +62,33 @@
 	}
 	.gallery-card.bg-1 {
 		background-image: url("../../../assets/home/desktop/image-web-design-large.jpg");
+	}
+	.features {
+		.card-body {
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.features {
+	.card-img-top {
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 300px;
+	}
+	.img-1 {
+		background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg"),
+			url("../../../assets/home/desktop/illustration-passionate.svg");
+	}
+	.img-2 {
+		background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg"),
+			url("../../../assets/home/desktop/illustration-resourceful.svg");
+	}
+	.img-3 {
+		background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg"),
+			url("../../../assets/home/desktop/illustration-friendly.svg");
 	}
 }

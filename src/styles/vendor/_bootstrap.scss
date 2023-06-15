@@ -10,7 +10,7 @@
 // );
 
 html * {
-	transition: 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
 }
 
 $primary: #e7816b;
@@ -59,4 +59,10 @@ $color-mode-type: data;
 
 .bg-light-grey {
 	background-color: $paper;
+}
+
+.btn-light:hover {
+	background-color: $secondary;
+	border-color: $secondary;
+	color: $paper;
 }
