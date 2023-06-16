@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import { useTheme } from "./hooks/useTheme";
+import WebDesign from "./pages/WebDesign";
 function App() {
 	const { theme } = useTheme();
 	return (
@@ -15,6 +16,9 @@ function App() {
 				</Routes>
 				<Routes>
 					<Route path="/about" element={<About />} />
+				</Routes>
+				<Routes>
+					<Route path="/web-design" element={<WebDesign />} />
 				</Routes>
 			</main>
 			<Footer />

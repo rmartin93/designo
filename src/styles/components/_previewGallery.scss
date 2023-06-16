@@ -1,0 +1,77 @@
+@use "../abstracts/colors" as color;
+.preview-gallery {
+	.card {
+		margin-bottom: 3rem;
+	}
+	.card-img-top {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 320px;
+		overflow: auto;
+		&.express {
+			background-image: url("../../../assets/web-design/desktop/image-express.jpg");
+		}
+		&.transfer {
+			background-image: url("../../../assets/web-design/desktop/image-transfer.jpg");
+		}
+		&.photon {
+			background-image: url("../../../assets/web-design/desktop/image-photon.jpg");
+		}
+		&.builder {
+			background-image: url("../../../assets/web-design/desktop/image-builder.jpg");
+		}
+		&.blogr {
+			background-image: url("../../../assets/web-design/desktop/image-blogr.jpg");
+		}
+		&.camp {
+			background-image: url("../../../assets/web-design/desktop/image-camp.jpg");
+		}
+	}
+	.card-body {
+		text-decoration: none;
+		background-color: color.$secondaryTrans;
+		&:hover {
+			background-color: color.$primary;
+			color: color.$light;
+			h3 {
+				color: color.$light !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.preview-gallery {
+		.card > * {
+			width: 50% !important;
+		}
+		.card-body {
+			border-bottom-left-radius: 0rem !important;
+			border-top-right-radius: 1rem;
+		}
+		.card-img-top {
+			border-top-right-radius: 0rem !important;
+			border-bottom-left-radius: 1rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.preview-gallery {
+		.card > * {
+			width: auto !important;
+		}
+		.card {
+			margin-bottom: 0rem;
+		}
+		.card-body {
+			border-bottom-left-radius: 1rem !important;
+			border-top-right-radius: 0rem;
+		}
+		.card-img-top {
+			border-top-right-radius: 1rem !important;
+			border-bottom-left-radius: 0rem;
+		}
+	}
+}

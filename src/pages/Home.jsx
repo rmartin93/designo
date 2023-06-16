@@ -1,5 +1,7 @@
 import { BsChevronRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Cta from "../components/Cta";
+import GalleryLink from "../components/GalleryLink";
 export default function Home() {
 	return (
 		<div className="home">
@@ -19,48 +21,27 @@ export default function Home() {
 			<section className="container px-sm-0 section-spacer-y">
 				<div className="row px-sm-0">
 					<div className="col-md-6">
-						<Link
-							to="/projects"
-							className="card rounded-4 text-light gallery-card bg-1"
-						>
-							<div className="overlay h-100 d-flex flex-column justify-content-center align-items-center gap-4">
-								<h2>WEB DESIGN</h2>
-								<h3>
-									VIEW PROJECTS
-									<BsChevronRight className="text-primary ms-3" />
-								</h3>
-							</div>
-						</Link>
+						<GalleryLink
+							title="WEB DESIGN"
+							classList="bg-1"
+							link="/web-design"
+						/>
 					</div>
 					<div className="col-md-6">
 						<div className="row flex-column">
 							<div className="col-12">
-								<Link
-									to="/projects"
-									className="card rounded-4 text-light gallery-card bg-2 gallery-card-split gallery-card-spacer"
-								>
-									<div className="overlay h-100 d-flex flex-column justify-content-center align-items-center gap-4">
-										<h2>APP DESIGN</h2>
-										<h3>
-											VIEW PROJECTS
-											<BsChevronRight className="text-primary ms-3" />
-										</h3>
-									</div>
-								</Link>
+								<GalleryLink
+									title="APP DESIGN"
+									classList="bg-2 gallery-card-split gallery-card-spacer"
+									link="/app-design"
+								/>
 							</div>
 							<div className="col-12">
-								<Link
-									to="/projects"
-									className="card rounded-4 text-light gallery-card bg-3 gallery-card-split"
-								>
-									<div className="overlay h-100 d-flex flex-column justify-content-center align-items-center gap-4">
-										<h2>GRAPHIC DESIGN</h2>
-										<h3>
-											VIEW PROJECTS
-											<BsChevronRight className="text-primary ms-3" />
-										</h3>
-									</div>
-								</Link>
+								<GalleryLink
+									title="GRAPHIC DESIGN"
+									classList="bg-3 gallery-card-split"
+									link="/graphic-design"
+								/>
 							</div>
 						</div>
 					</div>
@@ -110,28 +91,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="container px-sm-0 text-light">
-				<div className="row px-sm-0">
-					<div className="col-12">
-						<div className="cta bg-primary rounded-4">
-							<div className="row">
-								<div className="col-12 col-lg-6 text-center text-lg-start">
-									<h2>Let's talk about your project</h2>
-									<p>
-										Ready to take it to the next level? Contact us today and
-										find out how our expertise can help your business grow.
-									</p>
-								</div>
-								<div className="col-12 col-lg-6 cta-btn-wrapper">
-									<button className="btn btn-light btn-cta">
-										GET IN TOUCH
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<Cta />
 			<section className="py-4 d-none">
 				<div className="container">
 					<div className="row">

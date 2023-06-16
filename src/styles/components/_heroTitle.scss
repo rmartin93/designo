@@ -1,0 +1,16 @@
+.hero-title {
+	height: 300px;
+	> * {
+		height: 100%;
+	}
+	background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+	background-size: 700px;
+	background-repeat: no-repeat;
+	background-position-x: right;
+}
+
+@media (min-width: 576px) {
+	.hero-title {
+		border-radius: 1rem;
+	}
+}
