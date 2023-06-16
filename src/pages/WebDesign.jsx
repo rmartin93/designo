@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import HeroTitle from "../components/HeroTitle";
 import Cta from "../components/Cta";
 import GalleryLink from "../components/GalleryLink";
+import ProjectCard from "../components/ProjectCard";
 export default function WebDesign() {
 	return (
 		<div className="web-design">
@@ -10,93 +11,54 @@ export default function WebDesign() {
 				<div className="container">
 					<div className="row mb-lg-5">
 						<div className="col-12 col-lg-4">
-							<div className="card border-0 rounded-4 shadow flex-column flex-sm-row flex-lg-column">
-								<div className="card-img-top rounded-top-4 express"></div>
-								<Link
-									to="/"
-									className="card-body text-center d-flex flex-column justify-content-center rounded-bottom-4"
-								>
-									<h3 className="my-4 text-primary">EXPRESS</h3>
-									<p>A multi-carrier shipping website for ecommerce business</p>
-								</Link>
-							</div>
+							<ProjectCard
+								title="EXPRESS"
+								text="A multi-carrier shipping website for ecommerce business"
+								classList="express"
+								link="/"
+							/>
 						</div>
 						<div className="col-12 col-lg-4">
-							<div className="card border-0 rounded-4 shadow flex-column flex-sm-row flex-lg-column">
-								<div className="card-img-top rounded-top-4 transfer"></div>
-								<Link
-									to="/"
-									className="card-body text-center d-flex flex-column justify-content-center rounded-bottom-4"
-								>
-									<h3 className="my-4 text-primary">TRANSFER</h3>
-									<p>
-										Site for low-cost money transfers and sending money within
-										seconds
-									</p>
-								</Link>
-							</div>
+							<ProjectCard
+								title="TRANSFER"
+								text="Site for low-cost money transfers and sending money within seconds"
+								classList="transfer"
+								link="/"
+							/>
 						</div>
 						<div className="col-12 col-lg-4">
-							<div className="card border-0 rounded-4 shadow flex-column flex-sm-row flex-lg-column">
-								<div className="card-img-top rounded-top-4 photon"></div>
-								<Link
-									to="/"
-									className="card-body text-center d-flex flex-column justify-content-center rounded-bottom-4"
-								>
-									<h3 className="my-4 text-primary">PHOTON</h3>
-									<p>
-										A state-of-the-art music player with high-resolution audio
-										and DSP effects
-									</p>
-								</Link>
-							</div>
+							<ProjectCard
+								title="PHOTON"
+								text="A state-of-the-art music player with high-resolution audio and DSP effects"
+								classList="photon"
+								link="/"
+							/>
 						</div>
 					</div>
 					<div className="row">
 						<div className="col-12 col-lg-4">
-							<div className="card border-0 rounded-4 shadow flex-column flex-sm-row flex-lg-column">
-								<div className="card-img-top rounded-top-4 builder"></div>
-								<Link
-									to="/"
-									className="card-body text-center d-flex flex-column justify-content-center rounded-bottom-4"
-								>
-									<h3 className="my-4 text-primary">BUILDER</h3>
-									<p>
-										Connects users with local contractors based on their
-										location
-									</p>
-								</Link>
-							</div>
+							<ProjectCard
+								title="BUILDER"
+								text="Connects users with local contractors based on their location"
+								classList="builder"
+								link="/"
+							/>
 						</div>
 						<div className="col-12 col-lg-4">
-							<div className="card border-0 rounded-4 shadow flex-column flex-sm-row flex-lg-column">
-								<div className="card-img-top rounded-top-4 blogr"></div>
-								<Link
-									to="/"
-									className="card-body text-center d-flex flex-column justify-content-center rounded-bottom-4"
-								>
-									<h3 className="my-4 text-primary">BLOGR</h3>
-									<p>
-										Blogr is a platform for creating an online blog or
-										publication
-									</p>
-								</Link>
-							</div>
+							<ProjectCard
+								title="BLOGR"
+								text="Blogr is a platform for creating an online blog or publication"
+								classList="blogr"
+								link="/"
+							/>
 						</div>
 						<div className="col-12 col-lg-4">
-							<div className="card border-0 rounded-4 shadow flex-column flex-sm-row flex-lg-column">
-								<div className="card-img-top rounded-top-4 camp"></div>
-								<Link
-									to="/"
-									className="card-body text-center d-flex flex-column justify-content-center rounded-bottom-4"
-								>
-									<h3 className="my-4 text-primary">CAMP</h3>
-									<p>
-										Get expert training in coding, data, design, and digital
-										marketing
-									</p>
-								</Link>
-							</div>
+							<ProjectCard
+								title="CAMP"
+								text="Get expert training in coding, data, design, and digital marketing"
+								classList="camp"
+								link="/"
+							/>
 						</div>
 					</div>
 				</div>
