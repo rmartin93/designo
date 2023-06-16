@@ -12,7 +12,9 @@ export default function Footer() {
 			<div className="container">
 				<div className="footer-nav">
 					<div className="footer-nav-logo-wrapper">
-						<img className="logo" src={logoLight} alt="Designo" />
+						<Link to="/">
+							<img className="logo" src={logoLight} alt="Designo" />
+						</Link>
 					</div>
 					<ul>
 						<li>
