@@ -2,37 +2,37 @@ import HeroTitle from "../components/HeroTitle";
 import Cta from "../components/Cta";
 import GalleryLink from "../components/GalleryLink";
 import ProjectCard from "../components/ProjectCard";
-export default function WebDesign() {
+export default function AppDesign() {
 	return (
-		<div className="web-design">
+		<div className="app-design">
 			<HeroTitle
-				title="Web Design"
-				text="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
+				title="App Design"
+				text="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
 			/>
 			<section className="preview-gallery section-spacer-y">
 				<div className="container">
 					<div className="row mb-lg-5">
 						<div className="col-12 col-lg-4">
 							<ProjectCard
-								title="EXPRESS"
-								text="A multi-carrier shipping website for ecommerce business"
-								classList="express"
+								title="AIRFILTER"
+								text="Solving the problem of poor indoor air quality by filtering the air"
+								classList="airfilter"
 								link="/"
 							/>
 						</div>
 						<div className="col-12 col-lg-4">
 							<ProjectCard
-								title="TRANSFER"
-								text="Site for low-cost money transfers and sending money within seconds"
-								classList="transfer"
+								title="EYECAM"
+								text="Product that lets you edit your favorite photos and videos at any time"
+								classList="eyecam"
 								link="/"
 							/>
 						</div>
 						<div className="col-12 col-lg-4">
 							<ProjectCard
-								title="PHOTON"
-								text="A state-of-the-art music player with high-resolution audio and DSP effects"
-								classList="photon"
+								title="FACEIT"
+								text="Get to meet your favorite internet superstar with the faceit app"
+								classList="faceit"
 								link="/"
 							/>
 						</div>
@@ -40,25 +40,17 @@ export default function WebDesign() {
 					<div className="row">
 						<div className="col-12 col-lg-4">
 							<ProjectCard
-								title="BUILDER"
-								text="Connects users with local contractors based on their location"
-								classList="builder"
+								title="TODO"
+								text="A todo app that features cloud sync with light and dark mode"
+								classList="todo"
 								link="/"
 							/>
 						</div>
 						<div className="col-12 col-lg-4">
 							<ProjectCard
-								title="BLOGR"
-								text="Blogr is a platform for creating an online blog or publication"
-								classList="blogr"
-								link="/"
-							/>
-						</div>
-						<div className="col-12 col-lg-4">
-							<ProjectCard
-								title="CAMP"
-								text="Get expert training in coding, data, design, and digital marketing"
-								classList="camp"
+								title="LOOPSTUDIOS"
+								text="A VR experience app made for Loopstudios"
+								classList="loopstudios"
 								link="/"
 							/>
 						</div>
@@ -70,9 +62,9 @@ export default function WebDesign() {
 					<div className="row">
 						<div className="col-12 col-lg-6 mb-5 mb-lg-0">
 							<GalleryLink
-								title="app design"
-								classList="bg-2"
-								link="/app-design"
+								title="web design"
+								classList="bg-1"
+								link="/web-design"
 							/>
 						</div>
 						<div className="col-12 col-lg-6">

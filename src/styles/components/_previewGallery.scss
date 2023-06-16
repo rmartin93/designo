@@ -27,10 +27,26 @@
 		&.camp {
 			background-image: url("../../../assets/web-design/desktop/image-camp.jpg");
 		}
+		&.airfilter {
+			background-image: url("../../../assets/app-design/desktop/image-airfilter.jpg");
+		}
+		&.eyecam {
+			background-image: url("../../../assets/app-design/desktop/image-eyecam.jpg");
+		}
+		&.faceit {
+			background-image: url("../../../assets/app-design/desktop/image-faceit.jpg");
+		}
+		&.loopstudios {
+			background-image: url("../../../assets/app-design/desktop/image-loopstudios.jpg");
+		}
+		&.todo {
+			background-image: url("../../../assets/app-design/desktop/image-todo.jpg");
+		}
 	}
 	.card-body {
 		text-decoration: none;
-		background-color: color.$secondaryTrans;
+		background-color: color.$secondaryLight;
+		min-height: 180px;
 		&:hover {
 			background-color: color.$primary;
 			color: color.$light;

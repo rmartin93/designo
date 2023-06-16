@@ -1,5 +1,3 @@
-import { BsChevronRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
 import Cta from "../components/Cta";
 import GalleryLink from "../components/GalleryLink";
 export default function Home() {
