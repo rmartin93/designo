@@ -1,28 +1,43 @@
 import { useRef } from "react";
 import LocationsPreview from "../components/LocationsPreview";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
 	const formRef = useRef();
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		// Make sure no inputs are empty
-		// If they are, show an alert inside the input
-		// If they aren't, show a success message
 		const form = formRef.current;
-		console.log("form", form);
+		let formValid = true;
 		for (let i = 0; i < form.length; i++) {
 			const input = form[i];
 			if (input.value === "") {
 				// Add notValid class to input's parent div
 				input.parentNode.classList.add("notValid");
+				formValid = false;
 			} else {
 				input.parentNode.classList.remove("notValid");
 			}
+		}
+		// If they aren't, show a success message
+		if (formValid) {
+			toast.success("👌 Thanks for reaching out, talk soon!", {
+				position: "top-center",
+				autoClose: 3000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "light",
+			});
 		}
 	};
 
 	return (
 		<>
+			<ToastContainer />
 			<section className="contact container bg-primary text-light section-spacer-b">
 				<div className="row">
 					<div className="col-12 col-lg-6 d-flex flex-column justify-content-center contact-text">
