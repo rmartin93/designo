@@ -1,0 +1,98 @@
+@use "../abstracts/colors" as color;
+.about {
+	h2 {
+		font-weight: 500;
+		letter-spacing: 1px;
+	}
+}
+.about-banner {
+	overflow: auto;
+	margin-bottom: 0px;
+	&-info {
+		background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg");
+		background-size: cover;
+		background-position: right;
+		background-repeat: no-repeat;
+		height: 350px;
+	}
+	&-img {
+		background-image: url("../../../assets/about/desktop/image-about-hero.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 350px;
+	}
+}
+
+.about-card {
+	overflow: auto;
+	background-color: color.$secondaryLight;
+	&-info {
+		background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg");
+		background-size: 370px;
+		background-position-x: left 250px;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+	&-img {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 350px;
+		&.img-1 {
+			background-image: url("../../../assets/about/desktop/image-world-class-talent.jpg");
+		}
+		&.img-2 {
+			background-image: url("../../../assets/about/desktop/image-real-deal.jpg");
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.about {
+		&-banner,
+		&-card {
+			border-radius: 1rem;
+		}
+		&-banner {
+			margin-bottom: 10rem;
+		}
+	}
+	.about-banner,
+	.about-card {
+		&-info {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.about-card {
+		&-info {
+			background-size: 440px;
+			background-position-x: left 440px;
+			background-position-y: bottom 580px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.about-banner,
+	.about-card {
+		&-info {
+			padding-left: 5rem;
+			padding-right: 5rem;
+		}
+		&-img {
+			height: auto;
+		}
+	}
+	.about-card {
+		&-info {
+			height: 600px;
+			background-size: cover;
+			background-position-x: left;
+		}
+	}
+}

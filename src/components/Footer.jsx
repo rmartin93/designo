@@ -1,10 +1,12 @@
 import logoLight from "../../public/assets/shared/desktop/logo-light.png";
 import { Link } from "react-router-dom";
-import { BsFacebook } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { BsPinterest } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
+import {
+	BsFacebook,
+	BsYoutube,
+	BsTwitter,
+	BsPinterest,
+	BsInstagram,
+} from "react-icons/bs";
 
 export default function Footer() {
 	return (
@@ -18,7 +20,7 @@ export default function Footer() {
 					</div>
 					<ul>
 						<li>
-							<Link to="/company">OUR COMPANY</Link>
+							<Link to="/about">OUR COMPANY</Link>
 						</li>
 						<li>
 							<Link to="/locations">LOCATIONS</Link>

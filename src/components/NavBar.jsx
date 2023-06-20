@@ -30,7 +30,7 @@ export default function NavBar() {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav ms-auto me-3 mb-2 mb-lg-0 gap-2">
 						<li className="nav-item">
-							<Link className="nav-link" aria-current="page" to="/company">
+							<Link className="nav-link" aria-current="page" to="/about">
 								OUR COMPANY
 							</Link>
 						</li>
@@ -49,7 +49,6 @@ export default function NavBar() {
 						type="button"
 						className={`btn btn-${theme === "dark" ? "light" : "dark"}`}
 						onClick={() => toggleTheme(theme)}
-						style={{ paddingBottom: "7px" }}
 					>
 						{theme === "dark" ? <BsSun /> : <BsMoon />}
 					</button>

@@ -1,7 +1,7 @@
 export default function Cta() {
 	return (
-		<section className="container px-sm-0 text-light">
-			<div className="row px-sm-0">
+		<section className="container text-light">
+			<div className="row">
 				<div className="col-12">
 					<div className="cta bg-primary rounded-4">
 						<div className="row">
@@ -13,7 +13,7 @@ export default function Cta() {
 								</p>
 							</div>
 							<div className="col-12 col-lg-6 cta-btn-wrapper">
-								<button className="btn btn-light btn-cta">GET IN TOUCH</button>
+								<button className="btn btn-light">GET IN TOUCH</button>
 							</div>
 						</div>
 					</div>

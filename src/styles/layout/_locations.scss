@@ -1,0 +1,87 @@
+@use "../abstracts/colors" as color;
+.locations {
+	* {
+		position: relative;
+		z-index: 1;
+	}
+	&-image {
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		&.canada {
+			background-image: url("../../../assets/locations/desktop/image-map-canada.png");
+		}
+		&.australia {
+			background-image: url("../../../assets/locations/desktop/image-map-australia.png");
+		}
+		&.uk {
+			background-image: url("../../../assets/locations/desktop/image-map-united-kingdom.png");
+		}
+	}
+	&-text {
+		overflow: auto;
+		background-color: color.$secondaryLight;
+		background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg");
+		background-size: 420px;
+		background-position-y: bottom;
+		text-align: center;
+		padding-top: 9rem;
+		padding-bottom: 9rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.locations {
+		.col-lg-4,
+		.col-lg-8 {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.locations {
+		&-image {
+			border-radius: 1rem;
+			margin-bottom: 3rem;
+		}
+		&-text {
+			border-radius: 1rem;
+			text-align: left;
+			padding-left: 5rem;
+			padding-right: 5rem;
+			padding-top: 9rem;
+			padding-bottom: 9rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.locations {
+		&-image {
+			height: 100%;
+			&.canada {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.gradient-overlay {
+	position: relative;
+}
+
+.gradient-overlay::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to left,
+		rgba(253, 243, 240, 0.3),
+		rgba(253, 243, 240, 1)
+	);
+}

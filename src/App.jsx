@@ -7,6 +7,8 @@ import { useTheme } from "./hooks/useTheme";
 import WebDesign from "./pages/WebDesign";
 import AppDesign from "./pages/AppDesign";
 import ScrollToTop from "./helpers/ScrollToTop";
+import GraphicDesign from "./pages/GraphicDesign";
+import Locations from "./pages/Locations";
 function App() {
 	const { theme } = useTheme();
 	return (
@@ -25,6 +27,12 @@ function App() {
 				</Routes>
 				<Routes>
 					<Route path="/app-design" element={<AppDesign />} />
+				</Routes>
+				<Routes>
+					<Route path="/graphic-design" element={<GraphicDesign />} />
+				</Routes>
+				<Routes>
+					<Route path="/locations" element={<Locations />} />
 				</Routes>
 			</main>
 			<Footer />

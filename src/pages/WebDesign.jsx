@@ -70,14 +70,14 @@ export default function WebDesign() {
 					<div className="row">
 						<div className="col-12 col-lg-6 mb-5 mb-lg-0">
 							<GalleryLink
-								title="app design"
+								title="APP DESIGN"
 								classList="bg-2"
 								link="/app-design"
 							/>
 						</div>
 						<div className="col-12 col-lg-6">
 							<GalleryLink
-								title="graphic design"
+								title="GRAPHIC DESIGN"
 								classList="bg-3"
 								link="/graphic-design"
 							/>

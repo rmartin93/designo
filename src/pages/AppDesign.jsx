@@ -62,14 +62,14 @@ export default function AppDesign() {
 					<div className="row">
 						<div className="col-12 col-lg-6 mb-5 mb-lg-0">
 							<GalleryLink
-								title="web design"
+								title="WEB DESIGN"
 								classList="bg-1"
 								link="/web-design"
 							/>
 						</div>
 						<div className="col-12 col-lg-6">
 							<GalleryLink
-								title="graphic design"
+								title="GRAPHIC DESIGN"
 								classList="bg-3"
 								link="/graphic-design"
 							/>

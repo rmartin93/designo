@@ -1,0 +1,19 @@
+.locationsPreview {
+	&-image {
+		height: 240px;
+		background-repeat: no-repeat;
+		background-position: center;
+		&.canada {
+			background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg"),
+				url("../../../assets/shared/desktop/illustration-canada.svg");
+		}
+		&.australia {
+			background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg"),
+				url("../../../assets/shared/desktop/illustration-australia.svg");
+		}
+		&.uk {
+			background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg"),
+				url("../../../assets/shared/desktop/illustration-united-kingdom.svg");
+		}
+	}
+}
