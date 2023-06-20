@@ -52,5 +52,6 @@
 }
 
 .Toastify__toast-container--top-center {
-	min-width: 375px;
+	width: 375px;
+	max-width: 100%;
 }
