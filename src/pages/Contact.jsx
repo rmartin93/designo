@@ -1,6 +1,26 @@
+import { useRef } from "react";
 import LocationsPreview from "../components/LocationsPreview";
 
 export default function Contact() {
+	const formRef = useRef();
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		// Make sure no inputs are empty
+		// If they are, show an alert inside the input
+		// If they aren't, show a success message
+		const form = formRef.current;
+		console.log("form", form);
+		for (let i = 0; i < form.length; i++) {
+			const input = form[i];
+			if (input.value === "") {
+				// Add notValid class to input's parent div
+				input.parentNode.classList.add("notValid");
+			} else {
+				input.parentNode.classList.remove("notValid");
+			}
+		}
+	};
+
 	return (
 		<>
 			<section className="contact container bg-primary text-light section-spacer-b">
@@ -15,7 +35,7 @@ export default function Contact() {
 						</p>
 					</div>
 					<div className="col-12 col-lg-6 contact-form-wrapper">
-						<form>
+						<form ref={formRef}>
 							<div className="mb-3">
 								<input
 									type="text"
@@ -44,12 +64,15 @@ export default function Contact() {
 									rows="5"
 								></textarea>
 							</div>
-							<div className="d-flex contact-btn-wrapper">
-								<button className="btn btn-light float-lg-end btn-xl">
-									SUBMIT
-								</button>
-							</div>
 						</form>
+						<div className="d-flex contact-btn-wrapper">
+							<button
+								className="btn btn-light float-lg-end btn-xl"
+								onClick={handleSubmit}
+							>
+								SUBMIT
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
