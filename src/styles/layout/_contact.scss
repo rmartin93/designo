@@ -1,0 +1,34 @@
+.contact {
+	background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	background-size: 50%;
+	.row {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+	&-btn-wrapper {
+		justify-content: center;
+		margin-top: 3rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.contact {
+		border-radius: 1rem;
+		.row {
+			padding-right: 6rem;
+			padding-left: 6rem;
+		}
+		&-btn-wrapper {
+			justify-content: flex-end;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.contact {
+		&-text {
+			padding-right: 6rem;
+		}
+	}
+}

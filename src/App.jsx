@@ -9,6 +9,7 @@ import AppDesign from "./pages/AppDesign";
 import ScrollToTop from "./helpers/ScrollToTop";
 import GraphicDesign from "./pages/GraphicDesign";
 import Locations from "./pages/Locations";
+import Contact from "./pages/Contact";
 function App() {
 	const { theme } = useTheme();
 	return (
@@ -33,6 +34,9 @@ function App() {
 				</Routes>
 				<Routes>
 					<Route path="/locations" element={<Locations />} />
+				</Routes>
+				<Routes>
+					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</main>
 			<Footer />
