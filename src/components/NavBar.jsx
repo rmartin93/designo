@@ -1,11 +1,22 @@
 import { useTheme } from "../hooks/useTheme";
 import { BsSun } from "react-icons/bs";
 import { BsMoon } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logoDark from "../../public/assets/shared/desktop/logo-dark.png";
 import logoLight from "../../public/assets/shared/desktop/logo-light.png";
+import { useEffect, useState } from "react";
+
 export default function NavBar() {
 	const { theme, toggleTheme } = useTheme();
+	const navigate = useNavigate();
+	const [location, setLocation] = useState(null);
+	useEffect(() => {
+		const navModal = document.getElementById("navModal");
+		navModal.addEventListener("hidden.bs.modal", (event) => {
+			navigate(location);
+		});
+	});
+
 	return (
 		<nav className="navbar navbar-expand-md py-4" data-bs-theme={theme}>
 			<div className="container">
@@ -81,23 +92,35 @@ export default function NavBar() {
 								className="btn-close me-2"
 								data-bs-dismiss="modal"
 								aria-label="Close"
+								id="closeBtn"
 							></button>
 						</div>
 						<div className="modal-body navModalBody">
 							<div className="d-flex flex-column gap-5 mt-4 ms-3">
-								<Link className="mobile-link" aria-current="page" to="/company">
-									OUR COMPANY
-								</Link>
-								<Link
+								<a
 									className="mobile-link"
 									aria-current="page"
-									to="/locations"
+									onClick={() => setLocation("/about")}
+									data-bs-dismiss="modal"
+								>
+									OUR COMPANY
+								</a>
+								<a
+									className="mobile-link"
+									aria-current="page"
+									onClick={() => setLocation("/locations")}
+									data-bs-dismiss="modal"
 								>
 									LOCATIONS
-								</Link>
-								<Link className="mobile-link" aria-current="page" to="/contact">
+								</a>
+								<a
+									className="mobile-link"
+									aria-current="page"
+									onClick={() => setLocation("/contact")}
+									data-bs-dismiss="modal"
+								>
 									CONTACT
-								</Link>
+								</a>
 							</div>
 						</div>
 					</div>
