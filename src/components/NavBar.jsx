@@ -58,7 +58,9 @@ export default function NavBar() {
 					</ul>
 					<button
 						type="button"
-						className={`btn btn-${theme === "dark" ? "light" : "dark"}`}
+						className={`btn btn-icon btn-${
+							theme === "dark" ? "light" : "dark"
+						}`}
 						onClick={() => toggleTheme(theme)}
 					>
 						{theme === "dark" ? <BsSun /> : <BsMoon />}
