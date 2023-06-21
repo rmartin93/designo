@@ -1,8 +1,8 @@
 .contact {
 	background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
-	background-repeat: no-repeat;
-	background-position: 0 100%;
+	background-position: left top;
 	background-size: 50%;
+	background-repeat: repeat-x;
 	.row {
 		padding-top: 3rem;
 		padding-bottom: 3rem;
@@ -11,11 +11,15 @@
 		justify-content: center;
 		margin-top: 3rem;
 	}
+	&-text {
+		text-align: center;
+	}
 }
 
 @media (min-width: 576px) {
 	.contact {
 		border-radius: 1rem;
+		background-repeat: no-repeat;
 		.row {
 			padding-right: 6rem;
 			padding-left: 6rem;
@@ -23,10 +27,22 @@
 		&-btn-wrapper {
 			justify-content: flex-end;
 		}
+		&-text {
+			text-align: left;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.contact {
+		background-position: top left;
+		background-size: 75%;
+		background-repeat: no-repeat;
 	}
 }
 @media (min-width: 992px) {
 	.contact {
+		background-position: 0 100%;
+		background-size: 50%;
 		&-text {
 			padding-right: 6rem;
 		}

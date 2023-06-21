@@ -41,7 +41,7 @@ export default function Contact() {
 			<section className="contact container bg-primary text-light section-spacer-b">
 				<div className="row">
 					<div className="col-12 col-lg-6 d-flex flex-column justify-content-center contact-text">
-						<h1>Contact</h1>
+						<h1>Contact Us</h1>
 						<p>
 							Ready to take it to the next level? Let's talk about your project
 							or idea and find out how we can help your business grow. If you
