@@ -45,45 +45,49 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="container features section-spacer-b">
-				<div className="row">
-					<div className="col-12 col-lg-4">
-						<div className="card border-0 flex-md-row flex-lg-column mb-5 mb-md-0">
-							<div className="card-img-top img-1"></div>
-							<div className="card-body text-center text-md-start text-lg-center">
-								<h3 className="my-4">PASSIONATE</h3>
-								<p>
-									Each project starts with an in-depth brand research to ensure
-									we only create products that serve a purpose. We merge art,
-									design, and technology into exciting new solutions.
-								</p>
+			<section className="features section-spacer-b">
+				<div className="container">
+					<div className="row">
+						<div className="col-12 col-lg-4">
+							<div className="card border-0 flex-md-row flex-lg-column mb-5 mb-md-0">
+								<div className="card-img-top img-1"></div>
+								<div className="card-body text-center text-md-start text-lg-center">
+									<h3 className="my-4">PASSIONATE</h3>
+									<p>
+										Each project starts with an in-depth brand research to
+										ensure we only create products that serve a purpose. We
+										merge art, design, and technology into exciting new
+										solutions.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className="col-12 col-lg-4">
-						<div className="card border-0 flex-md-row flex-lg-column mb-5 mb-md-0">
-							<div className="card-img-top img-2"></div>
-							<div className="card-body text-center text-md-start text-lg-center">
-								<h3 className="my-4">RESOURCEFUL</h3>
-								<p>
-									Everything that we do has a strategic purpose. We use an agile
-									approach in all of our projects and value customer
-									collaboration. It guarantees superior results that fulfill our
-									clients’ needs.
-								</p>
+						<div className="col-12 col-lg-4">
+							<div className="card border-0 flex-md-row flex-lg-column mb-5 mb-md-0">
+								<div className="card-img-top img-2"></div>
+								<div className="card-body text-center text-md-start text-lg-center">
+									<h3 className="my-4">RESOURCEFUL</h3>
+									<p>
+										Everything that we do has a strategic purpose. We use an
+										agile approach in all of our projects and value customer
+										collaboration. It guarantees superior results that fulfill
+										our clients’ needs.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className="col-12 col-lg-4">
-						<div className="card border-0 flex-md-row flex-lg-column">
-							<div className="card-img-top img-3"></div>
-							<div className="card-body text-center text-md-start text-lg-center">
-								<h3 className="my-4">FREINDLY</h3>
-								<p>
-									We are a group of enthusiastic folks who know how to put
-									people first. Our success depends on our customers, and we
-									strive to give them the best experience a company can provide.
-								</p>
+						<div className="col-12 col-lg-4">
+							<div className="card border-0 flex-md-row flex-lg-column">
+								<div className="card-img-top img-3"></div>
+								<div className="card-body text-center text-md-start text-lg-center">
+									<h3 className="my-4">FREINDLY</h3>
+									<p>
+										We are a group of enthusiastic folks who know how to put
+										people first. Our success depends on our customers, and we
+										strive to give them the best experience a company can
+										provide.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
